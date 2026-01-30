@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Hub</title>
+    <link rel="stylesheet" href="btnstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔢 Even or Odd Numbers</h1>
+      <div class="input-section">
+        <label for="numberInput">Enter a Number:</label>
+        <input
+          type="number"
+          id="numberInput"
+          placeholder="Type any number..."
+        />
+      </div>
+
+      <button class="check-button">Check Number</button>
+
+      <div id="result" class="result"></div>
+      <div class="code-section">
+        <h2>📝 The Function Code</h2>
+        <pre><code>
+          function checkEvenOrOdd(number){
+            if(number % 2 === 0){
+              return "Even" ;
+            }else{
+              return "Odd" ;
+            }
+          }
+        </code></pre>
+      </div>
+
+      <div class="examples">
+        <h2 style="color: #667eea; margin-bottom: 1rem">Examples:</h2>
+        <div class="example-item">
+          <strong>checkEvenOrOdd(4)</strong> ➡ Returns: "Even"
+        </div>
+        <div class="example-item">
+          <strong>checkEvenOrOdd(7)</strong> ➡ Returns: "Odd"
+        </div>
+        <div class="example-item">
+          <strong>checkEvenOrOdd(0)</strong> ➡ Returns: "Even"
+        </div>
+        <div class="example-item">
+          <strong>checkEvenOrOdd(-3)</strong> ➡ Returns: "Odd"
+        </div>
+      </div>
+    </div>
+    <script src="btnscript.js"></script>
+  </body>
+</html>
